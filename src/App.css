@@ -1,0 +1,187 @@
+/*global variables*/
+*{
+	box-sizing: border-box;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Ubuntu', sans-serif !important;
+	background: url(./components/bake.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+button{
+	margin: 5px !important;
+	font-family: 'Cinzel', serif  !important;
+	font-size: 20px;
+	color: #eee;
+	background: #333;
+}
+button a{
+	color: #eee;
+	text-decoration: none;
+}
+h2{
+	margin: 5px;
+	font-family: 'Exo', sans-serif  !important;
+}
+form{
+	padding: 20px;
+	background: rgba(0,0,0,0.7);
+}
+.mdl-layout__drawer-button{
+	margin: 40px !important;
+}
+.material-icons{
+	font-size: 50px !important;
+}
+
+
+/*main page*/
+.App {
+  text-align: center;
+}
+.App-header {
+  background: #282c34;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App-header h1{
+  font-size: 50px;
+  color: #fff;
+  font-family: 'Cinzel', serif  !important;
+}
+form input{
+	width: 33%;
+	height: 40px;
+}
+
+
+/*result area*/
+.recipe-box{
+	background: #eee;
+	padding: 20px;
+	margin: 20px auto;
+	width: 40%;
+}
+.recipe-box h2{
+	width: 75%;
+	margin: auto;
+	padding: 0 0 10px 0;
+}
+.recipe-box p{
+	margin: 10px;
+	font-size: 20px;
+}
+.recipe-box img{
+	width: 100%;
+	height: 300px;
+}
+
+
+/*individual page*/
+.individual{
+	display: flex;
+	padding: 50px 30px;
+	justify-content: center;
+}
+.tab{
+	background: #eee;
+	width: 500px;
+}
+.tab img{
+	width: 100%;
+	height: 300px;
+}
+.text{
+	background: #eee;
+	padding: 30px;
+}
+.text p{
+	font-size: 20px;
+	margin: 10px;
+}
+h3{
+	margin: 15px !important;
+}
+ul{
+	padding: 0;
+	width: 75%;
+	margin: auto;
+}
+ul li{
+	font-size: 18px;
+}
+
+
+/*media queries*/
+@media(max-width: 1024px){
+	.mdl-layout__drawer-button{
+		color: #fff;
+	}
+}
+
+@media(max-width: 767px){
+	form input{
+		width: 50%;
+	}
+	.recipe-box{
+		width: 75%;
+	}
+	.recipe-box h2{
+		font-size: 40px;
+	}
+	.individual{
+		flex-direction: column;
+	}
+	.individual > div{
+		margin: auto;
+	}
+	.text{
+		width: 500px;
+	}
+}
+
+@media(max-width: 600px){
+	.mdl-layout__drawer-button{
+		margin: 0 !important;
+		top: 10% !important;
+		left: 50% !important;
+		transform: translate(-50%, -50%) !important;
+		
+	}
+	.App-header{
+		
+	}
+	.App-header h1{
+		margin: 10px;
+	}
+	.tab{
+		width: 350px;
+	}
+	.tab h2{
+		padding: 20px;
+	}
+	.text{
+		width: 350px;
+	}
+}
+
+@media(max-width: 450px){
+	.recipe-box h2{
+		font-size: 30px;
+		line-height: 1;
+	}
+	.tab{
+		width: 300px;
+	}
+	.text{
+		width: 300px;
+	}
+}
